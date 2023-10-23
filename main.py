@@ -1,5 +1,3 @@
-#code written by shubhank
-
 from tkinter import *
 from tkinter import ttk
 import time
@@ -22,7 +20,7 @@ cur.execute("create table if not exists roomd(rn number primary key,beds number,
 #cur.execute("update roomd set tv='Yes' where rn = ? ",(19,))
 cur.execute("create table if not exists payments(id number primary key,dot varchar(15),time varchar(10),amt number,method varchar(10))")
 cur.execute("create table if not exists paymentsf(id number  primary key,f_name varchar,l_name varchar,c_number varchar,email varchar , r_n number ,day varchar,month varchar,year varchar,time varchar , method varchar,totalamt varchar)")
-#cur.execute("insert into paymentsf values(1,'Shubhank','Khare','9589861196','Shubhank7673@gmail.com',2,'1','11','2018','11:20:27 PM','Cash','3500')")
+#cur.execute("insert into paymentsf values(1,'Tushar','Bhardwaj','9817637698','tusharbhardwaj197@gmail.com',2,'1','11','2018','11:20:27 PM','Cash','3500')")
 #cur.execute("alter table paymentsf add totalamt varchar")
 con.commit()
 #cur.execute("drop table paymentsf")
@@ -48,7 +46,7 @@ Label(sroot,text="Hotel Management System ",font='Timesnewroman 40 ',bg='white',
 Label(sroot,text="Made by -",font='Timesnewroman 40 ',bg='white',fg='black').place(x=535,y=90)
 Label(sroot,text="Tushar",font='Timesnewroman 40 ',bg='white',fg='grey').place(x=535,y=180)
 Label(sroot,text="tusharbhardwaj197@gmail.com",font='Timesnewroman 40',bg='white',fg='grey').place(x=535,y=270)
-#Label(sroot,text="9589861196",font='Timesnewroman 40',bg='white',fg='grey').place(x=535,y=450)
+#Label(sroot,text="9817637698",font='Timesnewroman 40',bg='white',fg='grey').place(x=535,y=450)
 #----------- main project------------------------------------------------------------------------------------------------------------------
 def mainroot():
 	#sroot.destroy()
